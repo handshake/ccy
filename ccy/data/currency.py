@@ -64,3 +64,10 @@ def make_ccys(db):
 
     db.insert('DOP','214','DO',410,     'Dominican Peso',       dfr,'DO', symbol = 'RD$')
     db.insert('UYU','858','UY',410,     'Uruguayan Peso',       dfr,'UY', symbol = '$')
+    db.insert('CRC','188','CR',410,     'Costa Rica Colon',     dfr,'CR', symbol = '\u20a1')
+
+    db.insert('KWD','414','KW',410,     'Kuwaiti Dinar',        dfr,'KW', symbol = 'K.D.')
+    db.insert('SAR','682','SA',410,     'Saudi Rial',           dfr,'SA', symbol = 'SR')
+    db.insert('QAR','634','QA',410,     'Qatar Rial',           dfr,'QA', symbol = 'QR')
+    db.insert('AED','784','AE',410,     'Emirates Dirham',      dfr,'AE', symbol = dollar)
+    db.insert('OMR','512','OM',410,     'Omani Rial',           dfr,'OM', symbol = dollar)
