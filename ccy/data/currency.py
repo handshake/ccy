@@ -63,3 +63,4 @@ def make_ccys(db):
     db.insert('ZAR','710','SA',750,     'South African Rand',   dfr,'ZA', 'ACT/365','ACT/365', symbol='R')
 
     db.insert('DOP','214','DO',410,     'Dominican Peso',       dfr,'DO', symbol = 'RD$')
+    db.insert('UYU','858','UY',410,     'Uruguayan Peso',       dfr,'UY', symbol = '$')
