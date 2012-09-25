@@ -71,3 +71,4 @@ def make_ccys(db):
     db.insert('QAR','634','QA',410,     'Qatar Rial',           dfr,'QA', symbol = 'QR')
     db.insert('AED','784','AE',410,     'Emirates Dirham',      dfr,'AE', symbol = dollar)
     db.insert('OMR','512','OM',410,     'Omani Rial',           dfr,'OM', symbol = dollar)
+    db.insert('TND','788','TN',410,     'Tunisian Dinar',       dfr,'TN', symbol = 'DT')
