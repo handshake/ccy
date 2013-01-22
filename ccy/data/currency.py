@@ -75,3 +75,4 @@ def make_ccys(db):
 
     db.insert('ISK','352','IS',410,     'Icelandic Krona',      dfr,'IS', symbol = 'kr')
     db.insert('ZMK','894','ZK',410,     'Zambian Kwacha',       dfr,'ZK', symbol = 'ZK')
+    db.insert('BAM','977','KM',410,     'Bosnia / Herzegovina Convertible Mark', dfr,'KM', symbol = 'KM')
