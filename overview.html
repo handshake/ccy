@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Overview &mdash; ccy 0.6.0-beta.1 documentation</title>
+    <title>Overview &mdash; ccy 0.6.1-beta.0 documentation</title>
     
     <link rel="stylesheet" href="static/pulsar.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '0.6.0-beta.1',
+        VERSION:     '0.6.1-beta.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="static/jquery.js"></script>
     <script type="text/javascript" src="static/underscore.js"></script>
     <script type="text/javascript" src="static/doctools.js"></script>
-    <link rel="top" title="ccy 0.6.0-beta.1 documentation" href="index.html" />
+    <link rel="top" title="ccy 0.6.1-beta.0 documentation" href="index.html" />
     <link rel="next" title="Currencies" href="currencies.html" />
     <link rel="prev" title="Ccy" href="index.html" /> 
   </head>
@@ -41,7 +41,7 @@
         <li class="right" >
           <a href="index.html" title="Ccy"
              accesskey="P">previous</a> |</li>
-        <li><a href="index.html">ccy 0.6.0-beta.1 documentation</a> &raquo;</li> 
+        <li><a href="index.html">ccy 0.6.1-beta.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
 <div class="deck">
@@ -77,9 +77,11 @@ join and add more.</p>
 </tr>
 <tr class="field-odd field"><th class="field-name">Dev CI:</th><td class="field-body"><a class="reference external" href="http://travis-ci.org/lsbardel/ccy?branch=dev"><img alt="dev-build" src="https://travis-ci.org/lsbardel/ccy.png?branch=dev" /></a> <a class="reference external" href="https://coveralls.io/r/lsbardel/ccy?branch=dev"><img alt="coverage-dev" src="https://coveralls.io/repos/lsbardel/ccy/badge.png?branch=dev" /></a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Dowloads:</th><td class="field-body"><a class="reference external" href="http://pypi.python.org/pypi/ccy">http://pypi.python.org/pypi/ccy</a></td>
+<tr class="field-even field"><th class="field-name">Documentation:</th><td class="field-body"><a class="reference external" href="http://pythonhosted.org/ccy/">http://pythonhosted.org/ccy/</a></td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><a class="reference external" href="https://github.com/lsbardel/ccy">https://github.com/lsbardel/ccy</a></td>
+<tr class="field-odd field"><th class="field-name">Dowloads:</th><td class="field-body"><a class="reference external" href="http://pypi.python.org/pypi/ccy">http://pypi.python.org/pypi/ccy</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><a class="reference external" href="https://github.com/lsbardel/ccy">https://github.com/lsbardel/ccy</a></td>
 </tr>
 </tbody>
 </table>
@@ -91,9 +93,8 @@ join and add more.</p>
 </ul>
 </li>
 <li><a class="reference internal" href="#date-and-periods" id="id4">Date and Periods</a></li>
-<li><a class="reference internal" href="#requirements" id="id5">Requirements</a><ul>
-<li><a class="reference internal" href="#installation" id="id6">Installation</a></li>
-<li><a class="reference internal" href="#runnung-tests" id="id7">Runnung tests</a></li>
+<li><a class="reference internal" href="#installation" id="id5">Installation</a><ul>
+<li><a class="reference internal" href="#runnung-tests" id="id6">Runnung tests</a></li>
 </ul>
 </li>
 </ul>
@@ -197,29 +198,22 @@ to create <tt class="docutils literal"><span class="pre">Period</span></tt> inst
 </pre></div>
 </div>
 </div>
-<div class="section" id="requirements">
-<h2><a class="toc-backref" href="#id5">Requirements</a><a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="installation">
+<h2><a class="toc-backref" href="#id5">Installation</a><a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>This library works for Python 2.6 and higher, including Python 3.
+In addition, it requires:</p>
 <ul class="simple">
-<li>Python 2.6 or above</li>
 <li><a class="reference external" href="http://pytz.sourceforge.net/">pytz</a> for Countries information.</li>
 <li><a class="reference external" href="https://pypi.python.org/pypi/python-dateutil">dateutils</a> for date calculations</li>
 </ul>
-<div class="section" id="installation">
-<h3><a class="toc-backref" href="#id6">Installation</a><a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
-<p>This library works for Python 2.6 and higher, including Python 3.</p>
-<p>Using <cite>easy_install</cite>:</p>
-<div class="highlight-python"><pre>easy_install ccy</pre>
-</div>
-<p>Using <cite>pip</cite>:</p>
+<p>Install using <cite>pip</cite>:</p>
 <div class="highlight-python"><pre>pip install ccy</pre>
 </div>
-<p>From source:</p>
+<p>or from source:</p>
 <div class="highlight-python"><pre>python setup.py install</pre>
 </div>
-<p>It requires the <a class="reference external" href="http://pytz.sourceforge.net/">pytz</a> package.</p>
-</div>
 <div class="section" id="runnung-tests">
-<h3><a class="toc-backref" href="#id7">Runnung tests</a><a class="headerlink" href="#runnung-tests" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id6">Runnung tests</a><a class="headerlink" href="#runnung-tests" title="Permalink to this headline">¶</a></h3>
 <p>From within the package directory:</p>
 <div class="highlight-python"><pre>python runtests.py</pre>
 </div>
@@ -246,8 +240,7 @@ to create <tt class="docutils literal"><span class="pre">Period</span></tt> inst
 </ul>
 </li>
 <li><a class="reference internal" href="#date-and-periods">Date and Periods</a></li>
-<li><a class="reference internal" href="#requirements">Requirements</a><ul>
-<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#installation">Installation</a><ul>
 <li><a class="reference internal" href="#runnung-tests">Runnung tests</a></li>
 </ul>
 </li>
