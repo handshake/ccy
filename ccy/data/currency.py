@@ -41,8 +41,11 @@ def make_ccys(db):
            'Danish Krona', dfr, 'DK', '30/360', 'ACT/360',
            symbol=kr, html=kr)
     insert('JPY', '392', 'JY', 10000,
-           'Japanese Yen', 2,  'JP', 'ACT/365', 'ACT/360',
+           'Japanese Yen', 2, 'JP', 'ACT/365', 'ACT/360',
            symbol=r'\u00a5', html='&#xa5;')
+    insert('ISK', '352', 'IS', 410,
+           'Icelandic Krona', dfr, 'IS',
+           symbol='kr')
 
     # ASIA
     insert('CNY', '156', 'CY', 680,
@@ -75,7 +78,7 @@ def make_ccys(db):
     insert('MYR', '458', 'MR', 345,
            'Malaysian Ringgit', dfr, 'MY', 'ACT/365', 'ACT/365')
     insert('VND', '704', 'VD', 1700000,
-           'Vietnamese Dong', 0,  'VN', 'ACT/365', 'ACT/365',
+           'Vietnamese Dong', 0, 'VN', 'ACT/365', 'ACT/365',
            symbol=r'\u20ab', html='&#x20ab;')
 
     # LATIN AMERICA
@@ -92,10 +95,10 @@ def make_ccys(db):
            'Mexican Peso', dfr, 'MX', 'ACT/360', 'ACT/360',
            symbol=dollar, html='&#x24;')
     insert('CLP', '152', 'CH', 54500,
-           'Chilean Peso', 2,  'CL', 'ACT/360', 'ACT/360',
+           'Chilean Peso', 2, 'CL', 'ACT/360', 'ACT/360',
            symbol=dollar, html='&#x24;')
     insert('COP', '170', 'CL', 190000,
-           'Colombian Peso', 2,  'CO', 'ACT/360', 'ACT/360',
+           'Colombian Peso', 2, 'CO', 'ACT/360', 'ACT/360',
            symbol=dollar, html='&#x24;')
     # TODO: Check towletters code and position
     insert('JMD', '388', 'JD', 410,
@@ -109,6 +112,15 @@ def make_ccys(db):
     insert('BMD', '060', 'BD', 410,
            'BermudIan Dollar', dfr, 'BM',
            symbol=dollar, html='&#x24;')
+    insert('DOP', '214', 'DO', 410,
+           'Dominican Peso', dfr, 'DO',
+           symbol='RD$')
+    insert('UYU', '858', 'UY', 410,
+           'Uruguayan Peso', dfr, 'UY',
+           symbol='$')
+    insert('CRC', '188', 'CR', 410,
+           'Costa Rica Colon', dfr, 'CR',
+           symbol='\u20a1')
 
     # EASTERN EUROPE
     insert('CZK', '203', 'CK', 28,
@@ -134,8 +146,14 @@ def make_ccys(db):
            symbol=r'kn')
     # TODO: Check towletters code and position
     insert('KZT', '398', 'KT', 410,
-           'Tenge',  dfr, 'KZ',
+           'Tenge', dfr, 'KZ',
            symbol=r'\u20b8', html='&#x20b8;')
+    # TODO: Check towletters code and position
+    insert('EEK', '233', 'EK', 410,
+           'Estonia Kroon', dfr, 'EE')
+    insert('BAM', '977', 'BA', 410,
+           'Bosnia / Herzegovina Convertible Mark', dfr, 'BA',
+           symbol='KM')
 
     # MIDDLE EAST & AFRICA
     insert('ILS', '376', 'IS', 410,
@@ -158,6 +176,18 @@ def make_ccys(db):
     insert('ZAR', '710', 'SA', 750,
            'South African Rand', dfr, 'ZA', 'ACT/365', 'ACT/365',
            symbol=r'R', html='R')
+    insert('KWD', '414', 'KW', 410,
+           'Kuwaiti Dinar', dfr, 'KW',
+           symbol='K.D.')
+    insert('OMR', '512', 'OM', 410,
+           'Omani Rial', dfr, 'OM',
+           symbol=dollar)
+    insert('TND', '788', 'TN', 410,
+           'Tunisian Dinar', dfr, 'TN',
+           symbol='DT')
+    insert('ZMK', '894', 'ZK', 410,
+           'Zambian Kwacha', dfr, 'ZK',
+           symbol='ZK')
 
     # BITCOIN
     insert('XBT', '000', 'BT', -1,
