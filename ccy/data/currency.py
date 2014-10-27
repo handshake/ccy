@@ -121,6 +121,9 @@ def make_ccys(db):
     insert('CRC', '188', 'CR', 410,
            'Costa Rica Colon', dfr, 'CR',
            symbol='\u20a1')
+    insert('PAB', '590', 'PA', 1000,
+           'Panamanian Balboa', dfr, 'PA',
+           symbol='B/.')
 
     # EASTERN EUROPE
     insert('CZK', '203', 'CK', 28,
