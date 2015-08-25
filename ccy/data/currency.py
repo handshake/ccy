@@ -191,7 +191,9 @@ def make_ccys(db):
     insert('ZMK', '894', 'ZK', 410,
            'Zambian Kwacha', dfr, 'ZK',
            symbol='ZK')
-
+    insert('NGN', '566', 'NG', 410,
+           'Nigerian naira', dfr, 'NG',
+           symbol=r'\u20a6')
     # BITCOIN
     insert('XBT', '000', 'BT', -1,
            'Bitcoin', 8, 'WW',
